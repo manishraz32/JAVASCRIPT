@@ -5,10 +5,12 @@ const incElem = document.querySelector(".increment");
 var count = 0;
 countElem.innerText = count;
 decElem.addEventListener("click", function() {
+    //console.log(count);
     countElem.innerText = --count;
 });
 resetElem.addEventListener("click", function() {
-    countElem.innerText = 0;
+    count = 0;
+    countElem.innerText = count;
 });
 incElem.addEventListener("click", function() {
     countElem.innerText = ++count;
